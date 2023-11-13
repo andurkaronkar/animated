@@ -19,6 +19,7 @@ body {
   border-radius: 50%;
   position: fixed;
   z-index: 99;
+  transition: all linear 0.1s;
 }
 
 #cursor-blur {
@@ -29,6 +30,7 @@ body {
   position: fixed;
   filter: blur(50px);
   z-index: 9;
+  transition: all linear 0.4s;
   /* z-index: 99; */
 }
 
@@ -143,7 +145,7 @@ video {
 }
 
 #page2 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   z-index: 10;
 }
@@ -161,7 +163,7 @@ video {
   display: inline-block;
   font-size: 120px;
   font-weight: 900;
-  font-family: gilroy;
+
   color: transparent;
   margin-right: 10px;
   transition: all linear 0.5s;
@@ -191,4 +193,66 @@ video {
   animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+
+#about-us {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  /* background-color: red; */
+  align-items: center;
+  position: relative;
+  justify-content: space-around;
+}
+#about-us img {
+  height: 220px;
+  width: 220px;
+  border-radius: 17px;
+  object-fit: cover;
+}
+
+#about-us-in {
+  width: 50%;
+  text-align: center;
+}
+
+#about-us-in h3 {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+#about-us-in p {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#cards-container {
+  /* background-color: red; */
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 70px;
+  z-index: 10;
+}
+
+.card {
+  border-radius: 10px;
+  background-size: cover;
+  background-color: blue;
+  height: 80%;
+  width: 22%;
+}
+
+#card1 {
+  background-image: url(Assests/card1.avif);
+}
+
+#card2 {
+  background-image: url(/Assests/card2.webp);
+}
+
+#card3 {
+  background-image: url(/Assests/card3.avif);
 }
